@@ -1,8 +1,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-models/salary_model_pipeline.joblib
-data/tech_jobs_dataset.csv
 .venv/
 .vscode/
 .idea/
+*.log

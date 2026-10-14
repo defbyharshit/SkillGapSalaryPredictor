@@ -43,7 +43,8 @@ class SalaryPredictorModel:
     def train(self, dataset_path='data/tech_jobs_dataset.csv'):
         """Train ML pipeline on dataset and save model weights."""
         if not os.path.exists(dataset_path):
-            raise FileNotFoundError(f"Dataset not found at {dataset_path}. Run generate_dataset.py first.")
+            from generate_dataset import generate_job_dataset
+            generate_job_dataset(num_samples=1500)
 
         df = pd.read_csv(dataset_path)
 
